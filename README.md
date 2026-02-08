@@ -100,6 +100,76 @@ SUPPORTED PLATFORM
 
 - Windows
 - GCC Compiler required
+## How to Run This Project Using Node.js (PC Simulation)
+
+This Node.js version simulates the working logic of a Li-Fi receiver.
+It does NOT require any hardware.
+
+--------------------------------------------------
+
+STEP 1: Install Node.js
+
+1. Download Node.js from:
+   https://nodejs.org/
+
+2. Install the LTS version.
+
+3. Verify installation:
+   Open Command Prompt / PowerShell and run:
+   node -v
+   npm -v
+
+--------------------------------------------------
+
+STEP 2: Clone the Project
+
+Open PowerShell and run:
+
+git clone https://github.com/your-username/Li-Fi-Project.git
+cd Li-Fi-Project
+
+--------------------------------------------------
+
+STEP 3: Go to Node.js Folder
+
+(If your Node.js file is inside src/node_receiver)
+
+cd src\node_receiver
+
+--------------------------------------------------
+
+STEP 4: Run the Node.js Program
+
+node lifi_receiver.js
+
+--------------------------------------------------
+
+STEP 5: Test the Program
+
+Input:
+1
+Output:
+Light Detected : 1
+
+Input:
+0
+Output:
+No Light : 0
+
+--------------------------------------------------
+
+IMPORTANT NOTES
+
+- This is a PC-based simulation of Li-Fi logic
+- No Arduino or hardware is required
+- Real Li-Fi needs LED, LDR, and microcontroller
+
+--------------------------------------------------
+
+SUPPORTED PLATFORM
+
+- Windows / macOS / Linux
+- Node.js required
 
 ## 👨‍💻 Author
 Abhishek
