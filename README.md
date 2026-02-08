@@ -96,3 +96,9 @@ This project demonstrates a basic Li-Fi system using:
 > - They require Arduino IDE + hardware
 > - This PC program is a Li-Fi logic simulation
 
+---
+
+## 📌 Conclusion
+
+This project is intended for learning and demonstration purposes. Feel free to explore, modify, and enhance the project to experiment with advanced Li-Fi features.
+
