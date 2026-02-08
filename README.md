@@ -1,2 +1,2 @@
-# Li-Fi_project
+# Li-Fi-Project
 Internet through light.
