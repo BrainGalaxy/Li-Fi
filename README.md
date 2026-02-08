@@ -1,177 +1,164 @@
-# 🔦 Li-Fi Communication Project (C Language)
+# 🔦 Li-Fi Communication Project
 
-Li-Fi (Light Fidelity) is a wireless communication technology that uses
-LED light instead of radio waves to transmit data.
+Li-Fi (Light Fidelity) is a wireless communication technology that uses **visible light** instead of radio waves to transmit data.
 
-This project demonstrates a basic Li-Fi system using:
-- LED as transmitter
-- LDR as receiver
-- Embedded C and standard C logic
+This project demonstrates:
+- A **PC-based Li-Fi receiver simulation**
+- Basic **Li-Fi working logic**
+- Clear separation between **hardware (Arduino)** and **PC simulation**
+
+---
 
 ## 📁 Project Structure
-- src/transmitter → LED data transmission
-- src/receiver → Light data reception
-- src/pc_receiver → PC-side C simulation
-- docs → Project explanation
-- circuit_diagram → Hardware connections
 
-## 🛠 Technologies Used
-- Embedded C
-- Arduino IDE
-- Standard C
+Li-Fi-Project
+│
+├── README.md
+├── src
+│ ├── transmitter
+│ │ └── transmitter.c
+│ ├── receiver
+│ │ └── receiver.c
+│ └── pc_receiver
+│ └── lifi_receiver.c
+├── docs
+│ ├── project_overview.md
+│ ├── working_principle.md
+│ └── future_scope.md
+└── circuit_diagram
 
-## 📌 Applications
-- Smart homes
-- Secure indoor communication
-- Hospitals
-## How to Run This Project on Your PC (Windows)
+---
 
-This project includes a PC-based C simulation of a Li-Fi receiver.
-The actual Li-Fi transmitter and receiver require Arduino hardware.
+## 🧠 Project Explanation
 
---------------------------------------------------
+- **Transmitter**  
+  Uses an LED to transmit binary data (1s and 0s) through light.
 
-STEP 1: Install Required Software
+- **Receiver**  
+  Uses an LDR/photodiode to detect light intensity and convert it back to data.
 
-1. Install VS Code:
+- **PC Receiver (Simulation)**  
+  A C program that simulates Li-Fi data reception on a computer.
+
+---
+
+## 🖥️ How to Run This Project on Your PC (Windows)
+
+This section explains how **any user** can run the project on their PC.
+
+---
+
+### STEP 1: Install Required Software
+
+1. Install **VS Code**  
    https://code.visualstudio.com/
 
-2. Install MinGW (GCC Compiler):
+2. Install **MinGW (GCC Compiler)**  
    https://sourceforge.net/projects/mingw/
 
-3. Verify GCC installation:
-   Open PowerShell and run:
-   gcc --version
+3. Verify installation by running:
+```powershell
+gcc --version
+If GCC version is shown, installation is successful ✅
+STEP 2: Clone the Repository
 
---------------------------------------------------
-
-STEP 2: Clone the Project from GitHub
-
-Open PowerShell and run:
+Open PowerShell / Command Prompt and run:
 
 git clone https://github.com/your-username/Li-Fi-Project.git
 cd Li-Fi-Project
 
-(Replace "your-username" with the repository owner name)
 
---------------------------------------------------
+Replace your-username with the actual GitHub username.
 
-STEP 3: Go to PC Receiver Folder
-
+STEP 3: Navigate to PC Receiver Code
 cd src\pc_receiver
 
---------------------------------------------------
-
 STEP 4: Compile the C Program
-
 gcc lifi_receiver.c -o lifi_receiver
 
---------------------------------------------------
+
+This will create an executable file named lifi_receiver.
 
 STEP 5: Run the Program
-
 .\lifi_receiver
-
---------------------------------------------------
 
 STEP 6: Test the Program
 
 Input:
+
 1
+
+
 Output:
+
 Light Detected : 1
 
+
 Input:
+
 0
+
+
 Output:
+
 No Light : 0
 
---------------------------------------------------
 
-IMPORTANT NOTES
+🎉 The Li-Fi PC simulation is running successfully.
 
-- transmitter.c and receiver.c are Embedded C files
-- They must be run using Arduino IDE with hardware
-- This PC version is a simulation of Li-Fi working logic
+⚠️ Important Notes
 
---------------------------------------------------
+transmitter.c and receiver.c are Embedded C files
 
-SUPPORTED PLATFORM
+They require Arduino IDE + hardware
 
-- Windows
-- GCC Compiler required
-## How to Run This Project Using Node.js (PC Simulation)
+The PC program is a logic simulation, not real light transmission
 
-This Node.js version simulates the working logic of a Li-Fi receiver.
-It does NOT require any hardware.
+🛠 Technologies Used
 
---------------------------------------------------
+C Language
 
-STEP 1: Install Node.js
+Embedded C
 
-1. Download Node.js from:
-   https://nodejs.org/
+GCC Compiler
 
-2. Install the LTS version.
+Arduino IDE
 
-3. Verify installation:
-   Open Command Prompt / PowerShell and run:
-   node -v
-   npm -v
+VS Code
 
---------------------------------------------------
+Git & GitHub
 
-STEP 2: Clone the Project
+📌 Applications of Li-Fi
 
-Open PowerShell and run:
+Secure indoor communication
 
-git clone https://github.com/your-username/Li-Fi-Project.git
-cd Li-Fi-Project
+Hospitals and aircraft
 
---------------------------------------------------
+Smart homes
 
-STEP 3: Go to Node.js Folder
+IoT systems
 
-(If your Node.js file is inside src/node_receiver)
+🚀 Future Scope
 
-cd src\node_receiver
+High-speed Li-Fi networks
 
---------------------------------------------------
+Text and image transmission
 
-STEP 4: Run the Node.js Program
+IoT integration
 
-node lifi_receiver.js
+Smart city applications
 
---------------------------------------------------
+👨‍💻 Author
 
-STEP 5: Test the Program
+Your Name
+GitHub: https://github.com/your-username
 
-Input:
-1
-Output:
-Light Detected : 1
+⭐ If You Like This Project
 
-Input:
-0
-Output:
-No Light : 0
+Don’t forget to:
 
---------------------------------------------------
+⭐ Star the repository
 
-IMPORTANT NOTES
+🍴 Fork it
 
-- This is a PC-based simulation of Li-Fi logic
-- No Arduino or hardware is required
-- Real Li-Fi needs LED, LDR, and microcontroller
-
---------------------------------------------------
-
-SUPPORTED PLATFORM
-
-- Windows / macOS / Linux
-- Node.js required
-
-## 👨‍💻 Author
-Abhishek
-
-
+📢 Share it
