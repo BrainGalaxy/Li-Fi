@@ -60,8 +60,5 @@ This section explains how **any user** can run the project on their PC.
 ```powershell
 gcc --version
 If GCC version is shown, installation is successful ✅
-### STEP 2: Clone the Repository
-
-Open PowerShell / Command Prompt and run:
-If GCC version is shown, installation is successful ✅
-
+---
+### 
