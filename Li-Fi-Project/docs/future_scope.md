@@ -1,0 +1,4 @@
+- High-speed Li-Fi networks
+- IoT integration
+- Secure data communication
+- Smart city applications
